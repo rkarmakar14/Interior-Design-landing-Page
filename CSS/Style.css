@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-image: url("../image/Home-Interior-Design.jpg");
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+  height: 15vh;
+  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.navContainer {
+  display: flex;
+  flex: 0.8;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.logo {
+  width:100%;
+  flex: 0.1;
+  margin-left: 5%;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  flex: 0.8;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  flex: 0.8;
+  font-size: 14pt;
+  color: #fb984d;
+  justify-content: space-around;
+  position: relative;
+  font-weight: 700;
+}
+.list-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  flex: 0.2;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: #2b1a1ab8;
+  color: #fb984d;
+  margin-left: 20px;
+  padding-left: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.horizontal-line {
+  display: block;
+  width: 95%;
+  height: 3px;
+  margin-left: 4%;
+  margin-top: 5px;
+  background-color: #d1d1d1;
+}
+
+.fa-solid {
+  align-self: center;
+  margin-right: 20px;
+}
+
+.Main-Section {
+  display: flex;
+  flex: 1;
+  margin-top: 2%;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f4a161;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #d1d1d152;
+  padding: 10px 30px;
+}
+.upper-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+.Interior-Head {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 50pt;
+  padding-right: 20px;
+  flex: 0.8;
+}
+
+.ups {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff52;
+  width: 160px;
+  height: 160px;
+  color: #d77b34;
+  border-radius: 10px;
+  padding-left: 10px;
+  /* opacity: 0.5; */
+}
+
+.downs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff52;
+  color: #d77b34;
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+.brandIcon {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 25px;
+  /* background-color: #ffffff; */
+  border-radius: 14px;
+  align-items: center;
+  justify-content: center;
+}
+.fa-brands {
+  color: aqua;
+}
+
+.Learn-More {
+  cursor: pointer;
+  border: 3px solid #afaeae;
+  box-shadow: inset 0 0 15px 3px #fff;
+  background-color: transparent;
+  height: 50px;
+  width: 200px;
+  color: #f4a161;
+  font-weight: 900;
+  font-size: 1.5em;
+  border-radius: 20px;
+  margin-top: 50px;
+}
+.call-logo {
+  font-size: 25px;
+  background-color: blueviolet;
+}
+
+.below-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.iconContainer2 {
+  display: flex;
+flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10%;
+}
+.line {
+  display: inline-flex;
+  width: 2px;
+  height: 50px;
+  background-color: #fff;
+}
+
+.line2 {
+  display: inline-flex;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.dot {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 2;
+}
+.ups:hover{
+  background-color:#bf1cdc38;
+}
+.downs:hover{
+  background-color:#bf1cdc38;
+}
+.Learn-More:hover{
+  background-color:#bf1cdc38;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .logo{
+    /* float: left; */
+     margin-right: 60px; 
+  }
+  .list{
+    display: none;
+  }
+  .contact{
+    float: right;
+    font-size: 10px ;
+    flex-direction: row;
+    margin-left: 40%;
+    right: -10%;
+  }
+  .Main-Section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+  }
+  .upper-section{
+    margin-top: -10%;
+  }
+  .Interior-Head{
+    position: absolute;
+    margin-top: -10%;
+    font-size: 20pt;
+  }
+  .Learn-More{
+    position: absolute;
+    margin-top: -50%;
+    font-size: 1em;
+    height: auto;
+    width: auto;
+    padding: 10px;
+  }
+  .ups{
+    margin-left: 100%;
+    margin-top: 20%;
+    margin-right: -70%;
+  }
+  span.line{
+    margin-left: 100%;
+    margin-right: -70%;
+  }
+  .iconContainer>span.dot{
+    margin-left: 100%;
+    margin-right: -70%;
+  }
+}
+@media only screen and (max-width: 430px){
+  .Main-Section{
+    background-color: transparent;
+  }
+  
+}
